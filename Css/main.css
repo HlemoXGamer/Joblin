@@ -246,3 +246,40 @@ header .container nav h2.main-logo {
   color: var(--primary-White);
 }
 /* Joblin__State */
+/* Joblin__Voice */
+.joblin__voice {
+  padding: 78px 0;
+}
+.joblin__voice .container {
+}
+.joblin__voice .container h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--variationAccent-VaraintLightBlue);
+}
+.joblin__voice .container .wrapper {
+  margin-top: 57px;
+}
+.joblin__voice .container .wrapper .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.joblin__voice .container .wrapper .box div:first-child {
+  flex: 1;
+}
+.joblin__voice .container .wrapper .box div:last-child {
+  flex: 2;
+}
+.joblin__voice .container .wrapper .box div h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.7;
+  color: var(--primary-DarkGray);
+}
+.joblin__voice .container .wrapper .box div p {
+  margin-bottom: 40px;
+}
+/* Joblin__Voice */
