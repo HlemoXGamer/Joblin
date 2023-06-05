@@ -219,12 +219,15 @@ header .container nav h2.main-logo {
 .joblin__highlighter .wrapper div {
   padding: 32px 62px;
   border-radius: 5px;
+  position: relative;
 }
 .joblin__highlighter .wrapper div:first-child img {
-  margin-top: -30px;
+  position: absolute;
+  top: 57%;
 }
 .joblin__highlighter .wrapper div:last-child img {
-  margin-top: -25px;
+  position: absolute;
+  top: 59%;
 }
 .joblin__highlighter .wrapper div.yellow {
   background-color: var(--primary-White);
