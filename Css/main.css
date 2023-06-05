@@ -21,6 +21,12 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  .joplin__para {
+    text-align: center;
+    width: 100% !important;
+  }
+}
 .joblin__tagline1 {
   font-weight: 700;
   font-size: 32px;
@@ -49,6 +55,30 @@ header .container nav h2.main-logo {
   color: var(--primary-White);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 992px) {
+  header .container nav img {
+    max-width: 200px;
+  }
+  header .container nav h2.main-logo {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .container nav img {
+    max-width: 150px;
+  }
+  header .container nav h2.main-logo {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .container nav img {
+    max-width: 100px;
+  }
+  header .container nav h2.main-logo {
+    font-size: 18px;
+  }
+}
 /* Header */
 /* Joblin Logos */
 .joblin__logos {
@@ -59,6 +89,11 @@ header .container nav h2.main-logo {
   font-size: 48px;
   color: var(--primary-DarkBlue);
   margin-bottom: 45px;
+}
+@media screen and (max-width: 767px) {
+  .joblin__logos h2.main-logo {
+    text-align: center;
+  }
 }
 .joblin__logos .container > p {
   margin-bottom: 6px;
@@ -79,6 +114,14 @@ header .container nav h2.main-logo {
 }
 .joblin__logos .wrapper .box:nth-child(1) {
 }
+@media screen and (max-width: 767px) {
+  .joblin__logos .wrapper .box:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .joblin__logos .wrapper .box:nth-child(1) > p {
   width: 80%;
 }
@@ -91,14 +134,34 @@ header .container nav h2.main-logo {
   color: var(--primary-White);
   margin-bottom: 28px;
 }
+@media screen and (max-width: 767px) {
+  .joblin__logos .wrapper .colored-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .joblin__logos .wrapper .box-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 14px;
 }
+@media screen and (max-width: 767px) {
+  .joblin__logos .wrapper .box-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .joblin__logos .wrapper h2 {
+    text-align: center;
+  }
+}
 .joblin__logos .wrapper .box-wrapper img {
   margin-top: 7px;
+  max-width: 100%;
 }
 .joblin__logos .wrapper .box-wrapper p {
   width: 70%;
@@ -112,14 +175,22 @@ header .container nav h2.main-logo {
   background-color: var(--variationAccent-VaraintLightBlue);
   position: absolute;
   top: 50%;
-  left: 48%;
+  left: 49%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1200px) {
+  .joblin__logos .wrapper-2 .pipeline {
+    display: none;
+  }
 }
 .joblin__logos .wrapper-2 .joblin__tagline1 {
   margin-bottom: 34px;
 }
 .joblin__logos .wrapper-2 .our-para {
   margin-top: 19px;
+}
+.joblin__logos .wrapper-2 img {
+  max-width: 100%;
 }
 /* Joblin Logos */
 
@@ -145,13 +216,23 @@ header .container nav h2.main-logo {
   justify-content: flex-start;
   align-items: center;
   gap: 42px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .joblin__colours .wrapper {
+    justify-content: center;
+  }
 }
 .joblin__colours .wrapper img {
+  max-width: 100%;
 }
 /* Joblin__Colours */
 /* Joblin__Pallet */
 .joblin__pallet {
   padding: 45px 0;
+}
+.joblin__pallet img {
+  max-width: 100%;
 }
 /* Joblin__Pallet */
 /* Joblin__State */
@@ -174,6 +255,11 @@ header .container nav h2.main-logo {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 992px) {
+  .joblin__state::before {
+    display: none;
+  }
+}
 .joblin__state .wrapper {
 }
 .joblin__state .wrapper > div {
@@ -189,11 +275,28 @@ header .container nav h2.main-logo {
   font-size: 48px;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 767px) {
+  .joblin__state .wrapper > div .box h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .joblin__state .wrapper > div .box h2 {
+    font-size: 38px;
+  }
+}
+
 .joblin__state .wrapper > div .box p {
   color: var(--primary-White);
   width: 85%;
 }
+@media screen and (max-width: 500px) {
+  .joblin__state .wrapper > div .box p {
+    font-size: 18px;
+  }
+}
 .joblin__state .wrapper > div .box img {
+  max-width: 100%;
 }
 .joblin__highlighter {
   padding: 74px 0;
@@ -207,14 +310,36 @@ header .container nav h2.main-logo {
   font-size: 48px;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 767px) {
+  .joblin__highlighter h2 {
+    text-align: center;
+  }
+}
 .joblin__highlighter p {
   color: var(--primary-White);
+}
+@media screen and (max-width: 500px) {
+  .joblin__highlighter h2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .joblin__highlighter p {
+    font-size: 18px;
+  }
 }
 .joblin__highlighter .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 22px;
+}
+@media screen and (max-width: 767px) {
+  .joblin__highlighter .wrapper {
+    flex-wrap: wrap;
+    row-gap: 25px;
+    justify-content: center;
+  }
 }
 .joblin__highlighter .wrapper div {
   padding: 32px 62px;
@@ -224,10 +349,36 @@ header .container nav h2.main-logo {
 .joblin__highlighter .wrapper div:first-child img {
   position: absolute;
   top: 57%;
+  max-width: 100%;
 }
 .joblin__highlighter .wrapper div:last-child img {
   position: absolute;
   top: 59%;
+  max-width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .joblin__highlighter .wrapper div:first-child img {
+    top: 43%;
+  }
+  .joblin__highlighter .wrapper div:last-child img {
+    top: 44%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .joblin__highlighter .wrapper div:first-child img {
+    top: 59%;
+  }
+  .joblin__highlighter .wrapper div:last-child img {
+    top: 59%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .joblin__highlighter .wrapper div:first-child img {
+    top: 43%;
+  }
+  .joblin__highlighter .wrapper div:last-child img {
+    top: 43%;
+  }
 }
 .joblin__highlighter .wrapper div.yellow {
   background-color: var(--primary-White);
@@ -245,6 +396,7 @@ header .container nav h2.main-logo {
 .joblin__highlighter .wrapper div.blue h4 {
   color: var(--primary-White);
 }
+
 /* Joblin__State */
 /* Joblin__Voice */
 .joblin__voice {
@@ -258,6 +410,12 @@ header .container nav h2.main-logo {
   line-height: 1.5;
   color: var(--variationAccent-VaraintLightBlue);
 }
+
+@media screen and (max-width: 500px) {
+  .joblin__voice .container h2  {
+    font-size: 38px;
+  }
+}
 .joblin__voice .container .wrapper {
   margin-top: 57px;
 }
@@ -266,6 +424,11 @@ header .container nav h2.main-logo {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .joblin__voice .container .wrapper .box {
+    flex-direction: column;
+  }
 }
 .joblin__voice .container .wrapper .box div:first-child {
   flex: 1;
@@ -281,5 +444,10 @@ header .container nav h2.main-logo {
 }
 .joblin__voice .container .wrapper .box div p {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 500px) {
+  .joblin__voice .container .wrapper .box div p {
+    font-size: 18px;
+  }
 }
 /* Joblin__Voice */
