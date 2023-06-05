@@ -14,3 +14,29 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 /* Global */
+
+/* Header */
+header {
+  background-image: url("../Media/background\ blue\ motif\ 1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 36px 0;
+}
+header .container {
+}
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav img {
+}
+header .container nav h2.main-logo {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--primary-White);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Header */
