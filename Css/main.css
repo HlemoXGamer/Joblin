@@ -1,0 +1,16 @@
+/* Global */
+:root {
+  --primary-DarkBlue: #043873;
+  --primary-White: #ffffff;
+  --primary-DarkGray: #32363f;
+  --accent-LightBlue: #4f9cf9;
+  --accent-Yellow: #ffe492;
+  --variationPrimary-VaraintDark: #072445;
+  --variationPrimary-VaraintWhite: #f8f9fa;
+  --variationPrimary-VaraintDarkGray: #212529;
+  --variationAccent-VaraintLightBlue: #212529;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* Global */
