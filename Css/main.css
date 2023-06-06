@@ -8,14 +8,14 @@
   --variationPrimary-VaraintDark: #072445;
   --variationPrimary-VaraintWhite: #f8f9fa;
   --variationPrimary-VaraintDarkGray: #212529;
-  --variationAccent-VaraintLightBlue: #212529;
+  --variationAccent-VaraintLightBlue: #d9e8f8;
 }
 * {
   font-family: "Montserrat", sans-serif;
 }
 .joplin__para {
   font-weight: 400;
-  font-size: 21px;
+  font-size: 20.8px;
   line-height: 1.5;
   color: var(--primary-DarkGray);
   margin: 0;
@@ -125,10 +125,25 @@ header .container nav h2.main-logo {
 .joblin__logos .wrapper .box:nth-child(1) > p {
   width: 80%;
 }
+.para-1 {
+  width: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+  .joblin__logos .wrapper .box2 {
+    padding-left: 130px;
+    margin-right: -130px;
+  }
+}
 .joblin__logos .wrapper .colored-box {
   background-color: var(--primary-DarkBlue);
-  padding: 24px;
+  padding: 24px 15px 19px 24px;
   width: fit-content;
+}
+@media screen and (min-width: 1400px) {
+  .joblin__logos .wrapper .colored-box {
+    margin-left: 70px;
+  }
 }
 .joblin__logos .wrapper .colored-box p {
   color: var(--primary-White);
@@ -175,7 +190,7 @@ header .container nav h2.main-logo {
   background-color: var(--variationAccent-VaraintLightBlue);
   position: absolute;
   top: 50%;
-  left: 49%;
+  left: 47%;
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 1200px) {
@@ -218,11 +233,6 @@ header .container nav h2.main-logo {
   gap: 42px;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
-  .joblin__colours .wrapper {
-    justify-content: center;
-  }
-}
 .joblin__colours .wrapper img {
   max-width: 100%;
 }
@@ -231,8 +241,92 @@ header .container nav h2.main-logo {
 .joblin__pallet {
   padding: 45px 0;
 }
-.joblin__pallet img {
-  max-width: 100%;
+.joblin__pallet h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .joblin__pallet h2 {
+    text-align: center;
+  }
+}
+.joblin__pallet .sigma-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 35px;
+}
+@media screen and (max-width: 555px) {
+  .joblin__pallet .sigma-wrapper {
+    flex-direction: column;
+  }
+}
+.joblin__pallet .sigma-wrapper .circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 992px) {
+  .joblin__pallet .sigma-wrapper .circle-wrapper {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .joblin__pallet .sigma-wrapper {
+    justify-content: center;
+  }
+}
+.joblin__pallet .sigma-wrapper .circle-wrapper .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+.joblin__pallet .sigma-wrapper .circle-wrapper .info {
+}
+.joblin__pallet .sigma-wrapper .circle-wrapper .info p {
+}
+
+.joblin__pallet .row-space {
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.joblin__pallet .row-space div {
+  width: 97%;
+  height: 1px;
+  background-color: var(--primary-DarkGray);
+}
+.joblin__pallet .dark-blue {
+  background-color: var(--primary-DarkBlue);
+}
+.joblin__pallet .white {
+  background-color: var(--primary-White);
+}
+.joblin__pallet .dark-gray {
+  background-color: var(--primary-DarkGray);
+}
+.joblin__pallet .light-blue {
+  background-color: var(--accent-LightBlue);
+}
+.joblin__pallet .yellow {
+  background-color: var(--accent-Yellow);
+}
+.joblin__pallet .variant-dark {
+  background-color: var(--variationPrimary-VaraintDark);
+}
+.joblin__pallet .variant-white {
+  background-color: var(--variationPrimary-VaraintWhite);
+}
+.joblin__pallet .variant-dark-gray {
+  background-color: var(--variationPrimary-VaraintDarkGray);
+}
+.joblin__pallet .variant-light-blue {
+  background-color: var(--variationAccent-VaraintLightBlue);
 }
 /* Joblin__Pallet */
 /* Joblin__State */
@@ -262,6 +356,9 @@ header .container nav h2.main-logo {
 }
 .joblin__state .wrapper {
 }
+.joblin__state .image {
+  transform: translateY(25px);
+}
 .joblin__state .wrapper > div {
   display: flex;
   flex-direction: column;
@@ -274,6 +371,7 @@ header .container nav h2.main-logo {
   color: var(--primary-White);
   font-size: 48px;
   margin-bottom: 28px;
+  font-weight: 700;
 }
 @media screen and (max-width: 767px) {
   .joblin__state .wrapper > div .box h2 {
@@ -309,6 +407,7 @@ header .container nav h2.main-logo {
   color: var(--primary-White);
   font-size: 48px;
   margin-bottom: 28px;
+  font-weight: 700;
 }
 @media screen and (max-width: 767px) {
   .joblin__highlighter h2 {
@@ -387,10 +486,10 @@ header .container nav h2.main-logo {
   background-color: var(--primary-DarkBlue);
 }
 .joblin__highlighter .wrapper div h4 {
-  color: var(--variationAccent-VaraintLightBlue);
+  color: var(--variationPrimary-VaraintDarkGray);
   margin: 0;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20.8px;
   line-height: 1.5;
 }
 .joblin__highlighter .wrapper div.blue h4 {
@@ -408,11 +507,11 @@ header .container nav h2.main-logo {
   font-weight: 700;
   font-size: 48px;
   line-height: 1.5;
-  color: var(--variationAccent-VaraintLightBlue);
+  color: var(--variationPrimary-VaraintDarkGray);
 }
 
 @media screen and (max-width: 500px) {
-  .joblin__voice .container h2  {
+  .joblin__voice .container h2 {
     font-size: 38px;
   }
 }
@@ -443,7 +542,7 @@ header .container nav h2.main-logo {
   color: var(--primary-DarkGray);
 }
 .joblin__voice .container .wrapper .box div p {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 @media screen and (max-width: 500px) {
   .joblin__voice .container .wrapper .box div p {
