@@ -108,6 +108,27 @@ header .container nav h2.main-logo {
 .joblin__logos .wrapper .para-1 {
   margin-bottom: 19px;
 }
+.joblin__logos .wrapper .logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 27px;
+}
+.joblin__logos .wrapper .logo-wrapper:last-child {
+  gap: 24px;
+}
+.joblin__logos .wrapper .logo-wrapper img {
+}
+.joblin__logos .wrapper .logo-wrapper h4 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.joblin__logos .wrapper .logo-wrapper .blue-header {
+  color: var(--accent-LightBlue);
+}
+.joblin__logos .wrapper .logo-wrapper .white-header {
+  color: var(--primary-White);
+}
 .joblin__logos .wrapper .para-1 .blue-text {
   font-weight: bold;
   color: var(--accent-LightBlue);
