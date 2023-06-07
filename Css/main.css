@@ -258,11 +258,11 @@ header .container nav h2.main-logo {
     left: 53%;
   }
 }
-@media (min-width: 1441px) and (max-width: 1750px) {
+/* @media (min-width: 1441px) and (max-width: 1750px) {
   .joblin__logos .p-row {
     padding: 0 5rem;
   }
-}
+} */
 /* Joblin Logos */
 
 /* Joblin__Colours */
