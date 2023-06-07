@@ -64,6 +64,11 @@ header .container nav h2.main-logo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 320px) {
+  header .container nav h2.main-logo {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 767px) {
   header .container nav img {
     max-width: 150px;
@@ -801,6 +806,11 @@ header .container nav h2.main-logo {
   }
   .joblin__highlighter .wrapper div:last-child img {
     top: 43%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .joblin__highlighter .wrapper div:last-child img {
+    top: 36%;
   }
 }
 .joblin__highlighter .wrapper div.yellow {
