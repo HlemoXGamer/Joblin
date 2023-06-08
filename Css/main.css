@@ -27,11 +27,21 @@
     width: 100% !important;
   }
 }
+@media screen and (max-width: 425px) {
+  .joplin__para {
+    font-size: 18px;
+  }
+}
 .joblin__tagline1 {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.5;
   color: var(--variationPrimary-VaraintDarkGray);
+}
+@media screen and (max-width: 425px) {
+  .joblin__tagline1 {
+    font-size: 28px;
+  }
 }
 /* Global */
 
@@ -85,10 +95,16 @@ header .container nav h2.main-logo {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 320px) {
+  header .container nav h2.main-logo {
+    font-size: 16px;
+  }
+}
 /* Header */
 /* Joblin Logos */
 .joblin__logos {
-  padding: 92px 0;
+  padding-top: 92px;
+  padding-bottom: 43px;
 }
 .joblin__logos h2.main-logo {
   font-weight: 700;
@@ -105,15 +121,36 @@ header .container nav h2.main-logo {
   margin-bottom: 6px;
 }
 .joblin__logos > .wrapper {
-  padding: 40px 0;
-  margin: 40px auto;
-  width: 80%;
-  border: 1px solid var(--variationAccent-VaraintLightBlue);
+  padding: 42px 59px 48px 75px;
+  margin: 40px 45px;
+  width: calc(100% - 90px);
+  border: 1px solid var(--variationPrimary-VaraintDarkGray);
   border-radius: 5px;
 }
-@media screen and (max-width: 1440px) {
+@media (min-width: 1400px) and (max-width: 1550px) {
   .joblin__logos > .wrapper {
-    width: 99%;
+    padding: 42px 0 48px 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1370px) {
+  .joblin__logos > .wrapper {
+    padding: 42px 0 48px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .joblin__logos > .wrapper {
+    padding: 42px 0 48px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 935px) {
+  .joblin__logos > .wrapper {
+    padding: 42px 0 48px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .joblin__logos > .wrapper {
+    padding: 42px 0 48px 0;
   }
 }
 .joblin__logos .wrapper .para-1 {
@@ -128,17 +165,29 @@ header .container nav h2.main-logo {
 .joblin__logos .wrapper .logo-wrapper:last-child {
   gap: 24px;
 }
-.joblin__logos .wrapper .logo-wrapper img {
+@media screen and (max-width: 320px) {
+  .joblin__logos .wrapper .logo-wrapper img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .joblin__logos .wrapper .logo-wrapper h4 {
   font-size: 38px;
   font-weight: 600;
 }
+@media screen and (max-width: 320px) {
+  .joblin__logos .wrapper .logo-wrapper h4 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
 .joblin__logos .wrapper .logo-wrapper .blue-header {
   color: var(--accent-LightBlue);
+  margin: 0;
 }
 .joblin__logos .wrapper .logo-wrapper .white-header {
   color: var(--primary-White);
+  margin: 0;
 }
 .joblin__logos .wrapper .para-1 .blue-text {
   font-weight: bold;
@@ -157,29 +206,35 @@ header .container nav h2.main-logo {
 .joblin__logos .wrapper .box:nth-child(1) > p {
   width: 80%;
 }
+@media screen and (max-width: 1024px) {
+  .joblin__logos .wrapper .box:nth-child(1) > p {
+    width: 90%;
+  }
+}
+
 .para-1 {
   width: 100%;
 }
-
+.joblin__logos .wrapper-2 .our-para {
+  width: 100% !important;
+}
 @media screen and (min-width: 1400px) {
   .joblin__logos .wrapper .box2 {
-    padding-left: 130px;
+    padding-left: 50px;
     margin-right: -130px;
   }
 }
 .joblin__logos .wrapper .colored-box {
   background-color: var(--primary-DarkBlue);
-  padding: 24px 15px 19px 24px;
-  width: fit-content;
-}
-@media screen and (min-width: 1400px) {
-  .joblin__logos .wrapper .colored-box {
-    margin-left: 70px;
-  }
+  padding: 17px 15px 15px 24px;
+  width: 345px;
+  /* height: 189px; */
 }
 .joblin__logos .wrapper .colored-box p {
+  font-weight: normal;
   color: var(--primary-White);
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 767px) {
   .joblin__logos .wrapper .colored-box {
@@ -215,11 +270,17 @@ header .container nav h2.main-logo {
 }
 .joblin__logos .wrapper-2 {
   position: relative;
+  padding: 42px 59px 35px 75px;
+}
+@media screen and (max-width: 425px) {
+  .joblin__logos .wrapper-2 {
+    padding: 42px 0 35px 0;
+  }
 }
 .joblin__logos .wrapper-2 .pipeline {
   width: 1px;
   height: 94%;
-  background-color: var(--variationAccent-VaraintLightBlue);
+  background-color: var(--variationPrimary-VaraintDarkGray);
   position: absolute;
   top: 50%;
   left: 47%;
@@ -239,9 +300,6 @@ header .container nav h2.main-logo {
 .joblin__logos .wrapper-2 img {
   max-width: 100%;
 }
-.joblin__logos .wrapper-2 .box-wrapper {
-  margin-right: 100px;
-}
 @media screen and (max-width: 425px) {
   .joblin__logos .wrapper-2 .box-wrapper {
     margin-right: 0;
@@ -249,7 +307,7 @@ header .container nav h2.main-logo {
 }
 @media (min-width: 1400px) and (max-width: 2100px) {
   .joblin__logos .wrapper-2 .special-box {
-    margin-left: 170px;
+    margin-left: 150px;
   }
   .joblin__logos .wrapper-2 .special-box p {
     width: 100%;
@@ -568,7 +626,7 @@ header .container nav h2.main-logo {
 /* Joblin__Colours */
 /* Joblin__Pallet */
 .joblin__pallet {
-  padding: 45px 0;
+  padding: 45px 0 92px 0;
 }
 .joblin__pallet h2 {
   font-weight: 600;
@@ -660,23 +718,24 @@ header .container nav h2.main-logo {
 /* Joblin__Pallet */
 /* Joblin__State */
 .joblin__state {
+  background-color: var(--primary-DarkBlue);
   background-image: url("../Media/Rectangle\ 16.png");
-  background-position: center center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 65px 0;
+  padding: 65px 0 78px 0;
   position: relative;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .joblin__state::before {
   content: "";
   width: 1px;
-  height: 100%;
-  background-color: var(--variationAccent-VaraintLightBlue);
+  height: 98%;
+  background-color: var(--variationPrimary-VaraintDarkGray);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 @media screen and (max-width: 992px) {
   .joblin__state::before {
