@@ -121,37 +121,11 @@ header .container nav h2.main-logo {
   margin-bottom: 6px;
 }
 .joblin__logos > .wrapper {
-  padding: 42px 59px 48px 75px;
+  padding: 42px 59px 48px 0px;
   margin: 40px 45px;
   width: calc(100% - 90px);
   border: 1px solid var(--variationPrimary-VaraintDarkGray);
   border-radius: 5px;
-}
-@media (min-width: 1400px) and (max-width: 1550px) {
-  .joblin__logos > .wrapper {
-    padding: 42px 0 48px 0;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1370px) {
-  .joblin__logos > .wrapper {
-    padding: 42px 0 48px 0;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .joblin__logos > .wrapper {
-    padding: 42px 0 48px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 935px) {
-  .joblin__logos > .wrapper {
-    padding: 42px 0 48px 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .joblin__logos > .wrapper {
-    padding: 42px 0 48px 0;
-  }
 }
 .joblin__logos .wrapper .para-1 {
   margin-bottom: 19px;
