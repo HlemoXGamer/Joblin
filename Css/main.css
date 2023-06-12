@@ -116,14 +116,6 @@ header .container nav h2.main-logo {
   header .container nav img {
     max-width: 100px;
   }
-  header .container nav h2.main-logo {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  header .container nav h2.main-logo {
-    font-size: 16px;
-  }
 }
 /* Header */
 /* Joblin Logos */
@@ -145,16 +137,6 @@ header .container nav h2.main-logo {
 @media screen and (max-width: 767px) {
   .joblin__logos h2.main-logo {
     font-size: 26px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .joblin__logos h2.main-logo {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__logos h2.main-logo {
-    font-size: 16px;
   }
 }
 .joblin__logos .container > p {
@@ -360,16 +342,6 @@ header .container nav h2.main-logo {
 @media screen and (max-width: 767px) {
   .joblin__colours h2 {
     font-size: 26px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .joblin__colours h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__colours h2 {
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -674,16 +646,6 @@ header .container nav h2.main-logo {
     font-size: 26px;
   }
 }
-@media screen and (max-width: 576px) {
-  .joblin__pallet h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__pallet h2 {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 1200px) {
   .joblin__pallet h2 {
     text-align: center;
@@ -832,16 +794,6 @@ header .container nav h2.main-logo {
     font-size: 26px;
   }
 }
-@media screen and (max-width: 576px) {
-  .joblin__state .wrapper > div .box h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__state .wrapper > div .box h2 {
-    font-size: 16px;
-  }
-}
 
 .joblin__state .wrapper > div .box p {
   color: var(--primary-White);
@@ -871,16 +823,6 @@ header .container nav h2.main-logo {
 @media screen and (max-width: 767px) {
   .joblin__highlighter h2 {
     font-size: 26px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .joblin__highlighter h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__highlighter h2 {
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -992,16 +934,6 @@ header .container nav h2.main-logo {
 @media screen and (max-width: 767px) {
   .joblin__voice .container h2 {
     font-size: 26px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .joblin__voice .container h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .joblin__voice .container h2 {
-    font-size: 16px;
   }
 }
 .joblin__voice .container .wrapper {
