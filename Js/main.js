@@ -2,7 +2,7 @@ const ctx = document.getElementById("chart1");
 const myChart = new Chart(ctx, {
   type: "pie",
   data: {
-    labels: ["Dark blue", "White", "light blue", "yellow", "dark gray"],
+    labels: ["Dark blue 60%", "White 20%", "light blue 10%", "yellow 7%", "dark gray 3%"],
     datasets: [
       {
         label: "# of Votes",
@@ -22,7 +22,7 @@ const myChart = new Chart(ctx, {
     plugins: {
       title: {
         display: true,
-        text: "Blue colour pallete",
+        text: "Blue colour palette",
         font: {
           size: 21,
           align: "left",
@@ -35,7 +35,7 @@ const ctx2 = document.getElementById("chart2");
 const myChart2 = new Chart(ctx2, {
   type: "pie",
   data: {
-    labels: ["White", "Dark blue", "light blue", "dark gray", "yellow"],
+    labels: ["White 60%", "Dark 20%", "light blue 10%", "dark gray 7%", "yellow 3%"],
     datasets: [
       {
         label: "# of Votes",
@@ -55,7 +55,7 @@ const myChart2 = new Chart(ctx2, {
     plugins: {
       title: {
         display: true,
-        text: "White colour pallete",
+        text: "White colour palette",
         font: {
           size: 21,
           align: "left",
