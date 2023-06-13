@@ -99,11 +99,6 @@ header .container nav h2.main-logo {
     font-size: 32px;
   }
 }
-@media screen and (max-width: 320px) {
-  header .container nav h2.main-logo {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 767px) {
   header .container nav img {
     max-width: 150px;
@@ -115,6 +110,11 @@ header .container nav h2.main-logo {
 @media screen and (max-width: 576px) {
   header .container nav img {
     max-width: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .container nav h2.main-logo {
+    font-size: 16px;
   }
 }
 /* Header */
