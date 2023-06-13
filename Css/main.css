@@ -117,6 +117,11 @@ header .container nav h2.main-logo {
     font-size: 16px;
   }
 }
+@media (min-width:376px) and (max-width:430px) {
+  header .container nav h2.main-logo {
+    font-size: 20px;
+  }
+}
 /* Header */
 /* Joblin Logos */
 .joblin__logos {
@@ -272,7 +277,7 @@ header .container nav h2.main-logo {
 }
 .joblin__logos .wrapper-2 {
   position: relative;
-  padding: 42px 59px 35px 75px;
+  padding: 42px 0 35px 0;
 }
 @media screen and (max-width: 425px) {
   .joblin__logos .wrapper-2 {
@@ -522,7 +527,7 @@ header .container nav h2.main-logo {
   margin-bottom: 28px;
   font-weight: 700;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .joblin__state .wrapper > div .box h2 {
     text-wrap: nowrap;
   }
