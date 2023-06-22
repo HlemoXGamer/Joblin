@@ -68,6 +68,11 @@
     max-width: 1220px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .justify-content-tablet-end {
+    justify-content: flex-end;
+  }
+}
 /* Global */
 
 /* Header */
@@ -84,27 +89,27 @@ header .container nav {
   justify-content: space-between;
   align-items: center;
 }
-header .container nav h2.main-logo {
+@media screen and (max-width: 425px) {
+  header .container nav {
+    align-items: flex-start;
+  }
+}
+header .container nav h1.main-logo {
   font-weight: 600;
   font-size: 48px;
   color: var(--primary-White);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
+  text-align: right;
 }
 @media screen and (max-width: 992px) {
   header .container nav img {
     max-width: 200px;
   }
-  header .container nav h2.main-logo {
-    font-size: 32px;
-  }
 }
 @media screen and (max-width: 767px) {
   header .container nav img {
     max-width: 150px;
-  }
-  header .container nav h2.main-logo {
-    font-size: 26px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -113,13 +118,27 @@ header .container nav h2.main-logo {
   }
 }
 @media screen and (max-width: 375px) {
-  header .container nav h2.main-logo {
-    font-size: 16px;
+  header .container nav h1.main-logo {
+    font-size: 36px;
   }
 }
-@media (min-width:376px) and (max-width:430px) {
-  header .container nav h2.main-logo {
-    font-size: 20px;
+header .container nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+header .container nav .logo h3 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+@media screen and (max-width: 560px) {
+  header .container nav .logo h3 {
+    display: none;
   }
 }
 /* Header */
@@ -130,7 +149,7 @@ header .container nav h2.main-logo {
 }
 .joblin__logos h2.main-logo {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   color: var(--primary-DarkBlue);
   margin-bottom: 45px;
 }
@@ -236,6 +255,11 @@ header .container nav h2.main-logo {
   padding: 17px 15px 15px 24px;
   width: 345px;
   /* height: 189px; */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .joblin__logos .wrapper .colored-box {
+    transform: translateX(-35px);
+  }
 }
 .joblin__logos .wrapper .colored-box p {
   font-weight: normal;
@@ -345,7 +369,7 @@ header .container nav h2.main-logo {
 }
 .joblin__colours h2 {
   color: var(--primary-White);
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 28px;
   font-weight: 700;
 }
@@ -369,18 +393,18 @@ header .container nav h2.main-logo {
   align-items: center;
   gap: 45px;
 }
-@media screen and (max-width:1400px) {
+@media screen and (max-width: 1400px) {
   .joblin__colours .custom-row {
     flex-wrap: wrap;
   }
 }
-.joblin__colours .custom-row .chartjs-wrapper{
+.joblin__colours .custom-row .chartjs-wrapper {
 }
-.joblin__colours .custom-row .chartjs-wrapper canvas{
+.joblin__colours .custom-row .chartjs-wrapper canvas {
   width: 535px;
 }
-@media screen and (max-width:575px) {
-  .joblin__colours .custom-row .chartjs-wrapper canvas{
+@media screen and (max-width: 575px) {
+  .joblin__colours .custom-row .chartjs-wrapper canvas {
     width: 270px;
   }
 }
@@ -391,7 +415,7 @@ header .container nav h2.main-logo {
 }
 .joblin__pallet h2 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
@@ -523,7 +547,7 @@ header .container nav h2.main-logo {
 }
 .joblin__state .wrapper > div .box h2 {
   color: var(--primary-White);
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 28px;
   font-weight: 700;
 }
@@ -569,7 +593,7 @@ header .container nav h2.main-logo {
 }
 .joblin__highlighter h2 {
   color: var(--primary-White);
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 28px;
   font-weight: 700;
 }
@@ -674,7 +698,7 @@ header .container nav h2.main-logo {
 }
 .joblin__voice .container h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.5;
   color: var(--variationPrimary-VaraintDarkGray);
 }
@@ -714,6 +738,14 @@ header .container nav h2.main-logo {
   font-size: 32px;
   line-height: 1.7;
   color: var(--primary-DarkGray);
+}
+@media (max-width: 767px) {
+  .joblin__voice .container .wrapper .box div h4 {
+    text-align: center;
+  }
+  .joblin__voice .container .wrapper .box {
+    align-items: center;
+  }
 }
 .joblin__voice .container .wrapper .box div p {
   margin-bottom: 36px;
